@@ -6,8 +6,13 @@ function MemoryCard({ name, number, imgUrl, handleCardClick }) {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div className='memory-card' onClick={handleCardClick} number={number}>
-      <img className='memory-card-image' src={imgUrl} alt={name} />
+    <div className='memory-card' number={number}>
+      <img
+        className='memory-card-image'
+        onClick={handleCardClick}
+        src={imgUrl}
+        alt={name}
+      />
       <h2 className='memory-card-name'>{name}</h2>
     </div>
   );
