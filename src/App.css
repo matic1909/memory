@@ -125,10 +125,10 @@ table {
 
 /* Global styles */
 :root {
-  --fs-xlg: 3.2rem;
+  --fs-xlg: 3rem;
   --fs-lg: 2.4rem;
   --fs-m: 1.6rem;
-  --fs-sm: 1rem;
+  --fs-sm: 1.2rem;
   --background-base: hsl(0, 0%, 75%);
 }
 
@@ -147,6 +147,6 @@ body {
 }
 
 .subtitle {
-  font-size: var(--fs-s);
+  font-size: var(--fs-sm);
   margin-bottom: 16px;
 }

@@ -35,6 +35,54 @@ const f1Drivers = [
     imgUrl:
       'https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1536.medium.jpg/1647334259839.jpg',
   },
+  {
+    number: '4',
+    name: 'Lando Norris',
+    imgUrl:
+      'https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1024.medium.jpg/1646819013197.jpg',
+  },
+  {
+    number: '3',
+    name: 'Daniel Ricciardo',
+    imgUrl:
+      'https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1024.medium.jpg/1646818924510.jpg',
+  },
+  {
+    number: '77',
+    name: 'Valtteri Bottas',
+    imgUrl:
+      'https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1024.medium.jpg/1646819266274.jpg',
+  },
+  {
+    number: '24',
+    name: 'Zhou Guanyu',
+    imgUrl:
+      'https://www.formula1.com/content/fom-website/en/drivers/guanyu-zhou/_jcr_content/image.img.1024.medium.jpg/1646818979975.jpg',
+  },
+  {
+    number: '22',
+    name: 'Yuki Tsunoda',
+    imgUrl:
+      'https://www.formula1.com/content/fom-website/en/drivers/yuki-tsunoda/_jcr_content/image.img.1024.medium.jpg/1648134405786.jpg',
+  },
+  {
+    number: '10',
+    name: 'Pierre Gasly',
+    imgUrl:
+      'https://www.formula1.com/content/fom-website/en/drivers/pierre-gasly/_jcr_content/image.img.1024.medium.jpg/1646819179303.jpg',
+  },
 ];
 
-export default f1Drivers;
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * i);
+    const temp = array[j];
+    array[j] = array[i];
+    array[i] = temp;
+  }
+  return f1Drivers;
+};
+
+const drivers = shuffleArray(f1Drivers);
+
+export default drivers;
